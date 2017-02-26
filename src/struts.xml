@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN" "struts-2.1.7.dtd" >
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.action.extension" value="aspx" />
+	<package name="blog" extends="struts-default">
+		<action name="*_abc" class="shen.action.BlogAction" method="{1}">
+			<result name="index">/WEB-INF/jsp/index.jsp</result>
+		</action>
+	</package>
+	<!-- <package name="script" extends="json-default">
+		<action name="*_script" class="app.action.ScriptAction" method="{1}">
+			<result name="subject" type="json">
+				<param name="includeProperties">msg.*</param>
+			</result>
+			<result name="addStudent" type="json">
+				<param name="includeProperties">msg.*</param>
+			</result>
+			<result name="group" type="json">
+				<param name="includeProperties">msg.*</param>
+			</result>
+			<result name="trip" type="json">
+				<param name="includeProperties">msg.*</param>
+			</result>
+			<result name="createkqz" type="json">
+				<param name="includeProperties">msg.*</param>
+			</result>
+			<result name="adjust" type="json">
+				<param name="includeProperties">msg.*</param>
+			</result>
+		</action>
+	</package>
+	 -->
+	
+	
+</struts>

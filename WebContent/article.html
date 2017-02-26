@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>日志-Hendy</title>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#navContainer").load("mode/nav.html");
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/mypublic.css"/>
+		<link href="img/title.ico" type="image/x-icon" rel="shortcut icon" /> 
+		<style type="text/css">
+			header{width: 1340px;background: white;}
+			#main{background: whitesmoke;width:1340px;border-radius: 5px;margin-top: 50px;}
+			#content div{border-radius: 5px;font-size: 18px;font-family: "微软雅黑";}
+			#content{margin:0px auto;width: 1150px;}
+			#left{padding: 30px;width: 300px;background: rgba(222,236,158,0.5);float: left;margin-right: 15px;}
+			#right{padding:30px;width: 700px;background: rgba(222,236,158,0.5);float: left;}
+			#left ul{list-style: none;}
+			#left ul li{width:150px;height: 50px;text-align: center;}
+			#left ul li:hover{background:burlywood;}
+			#left ul li a{text-decoration: none; line-height: 50px;}
+			#footer{clear: left;height: 100px;text-align: center;margin-top: 150px;}
+			#page ul {list-style: none;}
+			#page ul li{float: left;}
+			#page ul li a{text-decoration: none;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="navContainer">
+				
+			</div>
+		</header>
+		<hr>
+		<div id="main">
+			<div id="content">
+				<div id="left" >
+					<p><h3>日志分类</h3></p>
+					<hr>
+					<ul>
+						<li><a href="#">Java那些年(5)</a></li>
+						<li><a href="#">Web开发(12)</a></li>
+						<li><a href="#">爬虫(3)</a></li>
+						<li><a href="#">Python(2)</a></li>
+						<li><a href="#">生活娱乐(5)</a></li>
+						<li><a href="#">默认分类(2)</a></li>
+						<li><a href="#">回收站(2)</a></li>
+					</ul>
+					<hr>
+				</div>
+				<div id="right">
+					<p><h3>所有日志</h3></p>
+					<hr>
+					<div class="article">
+						<p class="article_title">软件中的二八法则 </p>
+						<span>2015-08-21 12:03:46</span>
+						<div class="article_content">
+							今天无意间在网上看到一句话，软件中的二八法则：
+							80%的bug隐藏在20%的代码中
+     						 二八定律也叫巴莱多定律，是19世纪末20世纪初意大利经济学家巴莱多发明的。他认为，在任何一组东西中，最重要的只占其中一小部分，约20%，其余80%的尽管是多数，却是次要的，因此又称二八法则。
+							因此，有时候应该把精力集中在20%上，来解决主要矛盾。
+						</div>
+						<div class="article_bottom">阅读(10)|评论(5)|<a href="javascript:void(0)">阅读详情>></a> </div>
+					</div>
+					<div class="article">
+						<p class="article_title">welcome-list配置成action或servlet虚拟路径文件报404问题 </p>
+						<span>2015-08-25 12:10:46</span>
+						<div class="article_content">
+							这几天的项目页面的访问全部改为.action访问，在修改首页时遇到了问题。将web.xml文件中<welcome-file>index.action</welcome-file>修改成这样，访问首页时报404错误，也就是说文件找不到。上网查了有两种解决方法。 
+    						方法一、在WebRoot下新建一个index.action空文件，这个方法简单实用，强烈推荐。
+						</div>
+						<div class="article_bottom">阅读(10)|评论(5)|<a href="javascript:void(0)">阅读详情>></a> </div>
+					</div>
+					<div class="article">
+						<p class="article_title">c++字符串操作</p>
+						<span>2015-08-25 12:10:46</span>
+						<div class="article_content">
+							长度主题总结
+							取得数组的总长度：sizeof(array)/sizeof(array[0])
+							获得当前字符数组中已使用的长度  strlen(array);
+							获得字符串长度 string ,   str.length();
+							获得字符指针指向 的字符串的长度  strlen(ch);//ch为字符指针
+							字符串 操作总结
+						</div>
+						<div class="article_bottom">阅读(10)|评论(5)|<a href="javascript:void(0)">阅读详情>></a> </div>
+					</div>
+					<hr>
+					<div id="page">
+						<div id="" style="width: 200px;margin: 0px auto;">
+							<ul>
+								<li><a href="#">下一页&nbsp;&nbsp;&nbsp;</a></li>
+								<li><a href="#">上一页</a></li>
+							</ul>
+						</div>
+					</div>	
+					
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="" style="line-height: 100px;font-size: 30px;background: rgba(211,211,211,0.5);">
+				@copyright:xxxx
+			</div>
+		</div>
+	</body>
+</html>
